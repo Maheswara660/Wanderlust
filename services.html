@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services – Wanderlust</title>
+  <meta name="description" content="Discover our travel services: custom trip planning tips, expert destination guides, budget-friendly advice, and thrilling adventure highlights.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('color-scheme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (theme === null && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light') {
+        document.documentElement.classList.add('light');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo" id="logo-link">
+      <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V10a2 2 0 00-2-2h-1.5a2 2 0 01-2-2V4.5A2.5 2.5 0 009.5 2H8a2 2 0 00-2 2v.065M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+      </svg>
+      Wanderlust
+    </a>
+    
+    <nav aria-label="Main Navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
+        <svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg>
+      </button>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+<aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+  <ul class="mobile-menu">
+    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+    <li><a href="about.html" class="mobile-nav-link">About</a></li>
+    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+    <li><a href="destinations.html" class="mobile-nav-link">Destinations</a></li>
+    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+  </ul>
+</aside>
+
+<main>
+  <!-- Services Header -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h1 class="section-title">Our Services &amp; Guides</h1>
+        <p class="section-subtitle">A collection of custom resources built to address the specific needs of modern travelers.</p>
+      </div>
+
+      <div class="grid grid-2" style="margin-top: var(--space-xl);">
+        
+        <!-- Service 1: Trip Planning -->
+        <div id="planning" class="glass-card service-card reveal" style="scroll-margin-top: 100px;">
+          <div class="card-icon service-icon">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h2 style="font-size: 1.6rem; margin-bottom: var(--space-xs);">Trip Planning Tips</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-md);">
+            Planning can make or break a trip. We provide systematic tools to ensure you stay ahead of your schedule.
+          </p>
+          <ul class="text-muted" style="list-style-position: inside; margin-bottom: var(--space-md); line-height: 1.8;">
+            <li>Pre-departure timeline checklists (visa, vaccines, banking).</li>
+            <li>Ultimate packing algorithms tailored to climate zones.</li>
+            <li>Interactive flight/hotel tracking organizers.</li>
+            <li>Travel insurance guides and safety protocols.</li>
+          </ul>
+        </div>
+
+        <!-- Service 2: Destination Guides -->
+        <div id="guides" class="glass-card service-card reveal" style="scroll-margin-top: 100px;">
+          <div class="card-icon service-icon" style="background-color: rgba(15, 118, 110, 0.1); color: var(--color-primary);">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+            </svg>
+          </div>
+          <h2 style="font-size: 1.6rem; margin-bottom: var(--space-xs);">Destination Guides</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-md);">
+            Explore cities like a local. Our guides offer rich insights into cultural norms, transport, and dining.
+          </p>
+          <ul class="text-muted" style="list-style-position: inside; margin-bottom: var(--space-md); line-height: 1.8;">
+            <li>Comprehensive district maps with key walking itineraries.</li>
+            <li>Authentic dining curations, covering hidden street food gems.</li>
+            <li>Public transit cheat sheets and local ride-hail apps.</li>
+            <li>Crucial local etiquette tips and key phrases.</li>
+          </ul>
+        </div>
+
+        <!-- Service 3: Budget Travel -->
+        <div id="budget" class="glass-card service-card reveal" style="scroll-margin-top: 100px;">
+          <div class="card-icon service-icon" style="background-color: rgba(34, 197, 94, 0.1); color: #22c55e;">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h2 style="font-size: 1.6rem; margin-bottom: var(--space-xs);">Budget Travel Advice</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-md);">
+            You don't need a fortune to see the world. Learn key strategies to cut costs without reducing the quality of your trip.
+          </p>
+          <ul class="text-muted" style="list-style-position: inside; margin-bottom: var(--space-md); line-height: 1.8;">
+            <li>Flight hacking blueprints and credit card reward hacks.</li>
+            <li>Hostel, homestay, and housesitting program curations.</li>
+            <li>Expense templates to split costs with ease.</li>
+            <li>Locating free local museums, events, walking tours, and parks.</li>
+          </ul>
+        </div>
+
+        <!-- Service 4: Adventure Highlights -->
+        <div id="adventure" class="glass-card service-card reveal" style="scroll-margin-top: 100px;">
+          <div class="card-icon service-icon" style="background-color: rgba(239, 68, 68, 0.1); color: #ef4444;">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </div>
+          <h2 style="font-size: 1.6rem; margin-bottom: var(--space-xs);">Adventure Travel Highlights</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-md);">
+            For those seeking adrenaline and active exploration. We curate the best outdoor trails and diving spots.
+          </p>
+          <ul class="text-muted" style="list-style-position: inside; margin-bottom: var(--space-md); line-height: 1.8;">
+            <li>Hiking trails (topography, DIFFICULTY levels, and gear).</li>
+            <li>PADI-vetted scuba diving and snorkeling reef maps.</li>
+            <li>Adrenaline highlights: paragliding, rafting, and zip-lining.</li>
+            <li>Extreme climate safety guides and gear listings.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Checklists Prompter -->
+  <section class="section" style="background-color: var(--color-card); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container text-center reveal">
+      <h2 style="font-size: 2rem; margin-bottom: var(--space-sm);">Need a Custom Packing List?</h2>
+      <p class="text-muted" style="max-width: 600px; margin: 0 auto var(--space-lg) auto;">
+        Tell us about your destination's climate and length of stay, and we will formulate a curated checklist directly for you.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Request Packing Guide</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Wanderlust</h3>
+        <p>Helping travelers explore destinations with ease, offering curations, reviews, and checklists. Discover the world, plan adventures, and travel smarter.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-services">
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#planning">Trip Planning</a></li>
+          <li><a href="services.html#guides">Destination Guides</a></li>
+          <li><a href="services.html#budget">Budget Travel</a></li>
+          <li><a href="services.html#adventure">Adventure Travel</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <ul class="footer-links">
+          <li>Email: <a href="mailto:wanderlust@example.com">wanderlust@example.com</a></li>
+          <li>Phone: <a href="tel:+91-XXXXXXXXXX">+91-XXXXXXXXXX</a></li>
+          <li>Location: Global Office, India</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust. All rights reserved. Designed for adventurers.</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

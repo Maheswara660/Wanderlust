@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Wanderlust</title>
+  <meta name="description" content="Learn about Wanderlust's mission to simplify travel planning, and our vision to create a more connected world through exploration.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('color-scheme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (theme === null && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light') {
+        document.documentElement.classList.add('light');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo" id="logo-link">
+      <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V10a2 2 0 00-2-2h-1.5a2 2 0 01-2-2V4.5A2.5 2.5 0 009.5 2H8a2 2 0 00-2 2v.065M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+      </svg>
+      Wanderlust
+    </a>
+    
+    <nav aria-label="Main Navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
+        <svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg>
+      </button>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+<aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+  <ul class="mobile-menu">
+    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+    <li><a href="about.html" class="mobile-nav-link">About</a></li>
+    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+    <li><a href="destinations.html" class="mobile-nav-link">Destinations</a></li>
+    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+  </ul>
+</aside>
+
+<main>
+  <!-- About Us Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h1 class="section-title">About Wanderlust</h1>
+        <p class="section-subtitle">Empowering adventurers to explore with confidence, curiosity, and ease.</p>
+      </div>
+
+      <div class="about-hero">
+        <div class="reveal">
+          <h2 style="margin-bottom: var(--space-sm); font-size: 1.8rem;">Our Purpose</h2>
+          <p class="about-intro-text text-muted">
+            Wanderlust was born out of a simple realization: the world is full of beauty and mystery, but planning to see it can be incredibly overwhelming. We set out to change that.
+          </p>
+          <p class="text-muted" style="margin-bottom: var(--space-md);">
+            Our platform acts as a unified harbor for global explorers. We compile deep-dive local reviews, optimize itineraries for multiple budget tiers, build responsive planning checklists, and curate highlight reels of active hotspots. By reducing the complexity of coordination, we make it easy for travelers to focus on what truly matters: immersion, exploration, and self-discovery.
+          </p>
+          <p class="text-muted">
+            From solo backpackers to families planning their annual holiday, Wanderlust is designed to support every type of journey. Travel shouldn't be a luxury of the stress-tolerant; it should be a baseline human experience.
+          </p>
+        </div>
+        <div class="reveal" style="display: flex; justify-content: center;">
+          <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); width: 100%; max-width: 400px; height: 350px;">
+            <img src="assets/images/hero.png" alt="Traveler overlooking valley" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg);">
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission and Vision Statements -->
+      <div class="grid grid-2 about-vision-grid">
+        <div class="glass-card reveal">
+          <div class="card-icon">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: var(--space-xs);">Our Mission</h3>
+          <p class="text-muted">
+            To provide clear, actionable, and inspiring resources that empower curious minds to explore the world's diverse cultures and landscapes. We strive to simplify travel planning so that anyone, anywhere, can embark on life-changing adventures with ease and peace of mind.
+          </p>
+        </div>
+
+        <div class="glass-card reveal">
+          <div class="card-icon" style="background-color: rgba(217, 119, 6, 0.1); color: var(--color-accent);">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: var(--space-xs);">Our Vision</h3>
+          <p class="text-muted">
+            To build a globally connected community of empathetic, informed travelers who respect local customs, protect natural environments, and cultivate cultural bridges. We envision a future where travel is accessible, sustainable, and serves as a tool for global understanding and peace.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section" style="background-color: var(--color-card); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-subtitle">The principles that guide how we help you explore the world.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="glass-card text-center reveal">
+          <h3 style="margin-bottom: var(--space-xs); color: var(--color-primary);">Inclusivity</h3>
+          <p class="text-muted">We construct guides for all budgets, travel styles, and abilities. Exploration belongs to everyone.</p>
+        </div>
+        
+        <div class="glass-card text-center reveal">
+          <h3 style="margin-bottom: var(--space-xs); color: var(--color-accent);">Authenticity</h3>
+          <p class="text-muted">We champion local perspectives, off-the-beaten-path trails, and honest reviews over sponsored listings.</p>
+        </div>
+
+        <div class="glass-card text-center reveal">
+          <h3 style="margin-bottom: var(--space-xs); color: #22c55e;">Responsibility</h3>
+          <p class="text-muted">We advocate for sustainable travel habits that minimize environmental footprints and support local economies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Wanderlust</h3>
+        <p>Helping travelers explore destinations with ease, offering curations, reviews, and checklists. Discover the world, plan adventures, and travel smarter.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-services">
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#planning">Trip Planning</a></li>
+          <li><a href="services.html#guides">Destination Guides</a></li>
+          <li><a href="services.html#budget">Budget Travel</a></li>
+          <li><a href="services.html#adventure">Adventure Travel</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <ul class="footer-links">
+          <li>Email: <a href="mailto:wanderlust@example.com">wanderlust@example.com</a></li>
+          <li>Phone: <a href="tel:+91-XXXXXXXXXX">+91-XXXXXXXXXX</a></li>
+          <li>Location: Global Office, India</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust. All rights reserved. Designed for adventurers.</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
