@@ -143,3 +143,13 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 ## 📖 Acknowledgment
 
 This project is prepared as part of the **Task 3 – AI Website Generation** requirements during the AI Web Development internship program with the **InAmigos Foundation**.
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you learn something new or if you find it useful!
+
+---
+
+<p align="center">
+  Built with ❤️ by Maheswara660.
+</p>
