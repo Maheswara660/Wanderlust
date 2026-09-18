@@ -10,19 +10,6 @@ This repository was created for **Task 3 – AI Website Generation** of the AI W
 
 ---
 
-## 🗺️ Table of Contents
-1. [Key Features](#-key-features)
-2. [Aesthetics & UX Design](#-aesthetics--ux-design)
-3. [Project Directory Structure](#-project-directory-structure)
-4. [Screenshots Gallery](#-screenshots-gallery)
-5. [Local Setup Guide](#-local-setup-guide)
-6. [Hosting & Deployment](#-hosting--deployment)
-7. [Technologies Used](#-technologies-used)
-8. [License](#-license)
-9. [Acknowledgment](#-acknowledgment)
-
----
-
 ## ⚡ Key Features
 
 - **System-Adaptive & Persistent Dark Mode:** Automatically respects user system preferences (`prefers-color-scheme`) and provides a manual override toggle stored in `localStorage`. Mitigation for Flash of Unstyled Content (FOUC) is built directly into the HTML headers.
